@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="js/wow.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="tinycarousel.css"
+      type="text/css"
+      media="screen"
+    />
+    <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#slider1").tinycarousel();
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+  </head>
+  <body>
+    <i class="arriba fa-solid fa-circle-chevron-up"></i>
+    <header>
+      <div class="contenido ancho">
+        <div class="contenido_header">
+          <figure>
+            <img src="img/logo.jpg" alt="logo principal" />
+          </figure>
+
+          <li id="icono" class="barras">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </div>
+
+        <nav id="caja">
+          <a href="#">ABOUT US</a>
+          <a href="#">OUR SERVICES</a>
+          <a href="#">PROJECTS</a>
+          <a href="#">TEAM</a>
+          <a href="#">LATEST NEWS</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="img/slide1.jpg" alt="" />
+          <h2 class="caption2">
+            Expert Financial <br />
+            Advice
+          </h2>
+          <p class="caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <a id="btn_id" class="caption3" href="">Learn More</a>
+        </li>
+        <li>
+          <img src="img/slide2.jpg" alt="" />
+          <h2 class="caption2">
+            Expert Financial <br />
+            Advice
+          </h2>
+          <p class="caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="caption3" href="">Learn More</a>
+        </li>
+        <li>
+          <img src="img/slide3.jpg" alt="" />
+          <h2 class="caption2">
+            Expert Financial <br />
+            Advice
+          </h2>
+          <p class="caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="caption3" href="">Learn More</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="modal" id="modal_id">
+      <div class="ancho informacion_modal">
+        <div class="btn_transparente">
+          <i id="cerrarbtn" class="cerrarmodal fas fa-times-circle"></i>
+          <figure>
+            <img src="img/galeriafoto3.jpg" alt="" />
+          </figure>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam
+          repellat doloremque? Labore iusto
+        </p>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2 class="">ABOUT US</h2>
+      <div class="ancho">
+        <article
+          class="wow animate__animated animate__backInLeft informacion_article"
+        >
+          <i class="azul fa-solid fa-laptop"></i>
+          <h3>MARKETING SERVICES</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos unde labore voluptatum quibusdam dolorem.
+          </p>
+        </article>
+
+        <article
+          class="wow animate__animated animate__backInRight informacion_article"
+        >
+          <i class="azul fa-solid fa-chart-line"></i>
+          <h3>MARKET RESEARCH</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos unde labore voluptatum quibusdam dolorem.
+          </p>
+        </article>
+
+        <article
+          class="wow animate__animated animate__backInLeft informacion_article"
+        >
+          <i class="azul fa-solid fa-address-card"></i>
+          <h3>BUSSINES PLANS</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos unde labore voluptatum quibusdam dolorem.
+          </p>
+        </article>
+
+        <article
+          class="wow animate__animated animate__backInRight informacion_article"
+        >
+          <i class="azul fa-solid fa-dollar-sign"></i>
+          <h3>ADVERTISING</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos unde labore voluptatum quibusdam dolorem.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="fancy_fotos">
+      <h2 class="texto_naranja">PROJECTS</h2>
+      <hr />
+      <div id="galeria" class="ancho contenedorfotos">
+        <a href="img/galeriafoto1.jpg" class="fancybox" rel="gallery1">
+          <img src="img/galeriafoto1.jpg" alt="" />
+        </a>
+
+        <a href="img/galeriafoto2.jpg" class="fancybox" rel="gallery1">
+          <img src="img/galeriafoto2.jpg" alt="" />
+        </a>
+
+        <a href="img/galeriafoto3.jpg" class="fancybox" rel="gallery1">
+          <img src="img/galeriafoto3.jpg" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- secccion del team -->
+    <section class="team">
+      <h2>TEAM</h2>
+      <div class="ancho informacion_todos">
+        <div class="nombrei">
+          <h2>JHON TYLER</h2>
+          <i id="icono1" class="ico fa-solid fa-square-plus"></i>
+        </div>
+
+        <div id="foto" class="fotos">
+          <figure>
+            <img src="img/foto_team1.jpg" alt="" />
+          </figure>
+          <h3>Directos of client strategy</h3>
+          <i class="gris fa-brands fa-facebook"></i>
+          <i class="gris fa-brands fa-pinterest"></i>
+          <i class="gris fa-brands fa-instagram"></i>
+        </div>
+
+        <div class="nombrei">
+          <h2>STUART WILLIAMS</h2>
+          <i id="icono2" class="ico fa-solid fa-square-plus"></i>
+        </div>
+
+        <div id="foto2" class="fotos">
+          <figure>
+            <img src="img/foto_team2.jpg" alt="" />
+          </figure>
+          <h3>Account directory</h3>
+          <i class="gris fa-brands fa-facebook"></i>
+          <i class="gris fa-brands fa-pinterest"></i>
+          <i class="gris fa-brands fa-instagram"></i>
+        </div>
+
+        <div class="nombrei">
+          <h2>JANE MACMillan</h2>
+          <i id="icono3" class="ico fa-solid fa-square-plus"></i>
+        </div>
+
+        <div id="foto3" class="fotos">
+          <figure>
+            <img src="img/foto_team3.jpg" alt="" />
+          </figure>
+          <h3>Analytics directory</h3>
+          <i class="gris fa-brands fa-facebook"></i>
+          <i class="gris fa-brands fa-pinterest"></i>
+          <i class="gris fa-brands fa-instagram"></i>
+        </div>
+
+        <div class="nombrei">
+          <h2>SAMANTA LOPEZ</h2>
+          <i id="icono4" class="ico fa-solid fa-square-plus"></i>
+        </div>
+
+        <div id="foto4" class="fotos">
+          <figure>
+            <img src="img/foto_team4.jpg" alt="" />
+          </figure>
+          <h3>Operations manager</h3>
+          <i class="gris fa-brands fa-facebook"></i>
+          <i class="gris fa-brands fa-pinterest"></i>
+          <i class="gris fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicios">
+      <h2 class="serviciosh2">OUT SERVICES</h2>
+      <div class="ancho">
+        <article class="servicios_article">
+          <figure>
+            <img src="img/fotoservicio1.jpg" alt="" />
+          </figure>
+          <h3>FIRST BLOG POST</h3>
+          <p class="azulparrafo">AUG 19, 2015</p>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            illo vitae, quasi mollitia magnam eligendi amet magni.
+          </p>
+        </article>
+
+        <article class="servicios_article">
+          <figure>
+            <img src="img/fotoservicio2.jpg" alt="" />
+          </figure>
+          <h3>SECOND BLOG POST</h3>
+          <p class="azulparrafo">AUG 16, 2015</p>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            illo vitae, quasi mollitia magnam eligendi amet magni.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div id="slider1">
+      <div class="tama">
+        <h2>LAST NEWS</h2>
+
+        <div class="contenedor_flechas">
+          <a class="buttons prev" href="#"
+            ><i class="fa-solid fa-square-caret-left"></i
+          ></a>
+          <a class="buttons next" href="#"
+            ><i class="fa-solid fa-square-caret-right"></i
+          ></a>
+        </div>
+      </div>
+      <div class="viewport">
+        <ul class="overview">
+          <li class="centrar">
+            <img src="img/foto_news1.jpg" />
+            <p>
+              Learning to reach new audiences using <br />
+              social media marketing tools
+            </p>
+            <p class="fecha_azul">October 29, 2019 \ 6 Comments</p>
+          </li>
+          <li class="centrar">
+            <img src="img/foto_news2.jpg" />
+            <p>
+              Learning to reach new audiences using <br />
+              social media marketing tools
+            </p>
+            <p class="fecha_azul">October 29, 2019 \ 6 Comments</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="ancho">
+        <figure>
+          <img src="img/logo.jpg" alt="" />
+        </figure>
+        <p>2017 All Rights Reserved | Privacy Policy</p>
+        <i class="gris fa-brands fa-facebook"></i>
+        <i class="gris fa-brands fa-pinterest"></i>
+        <i class="gris fa-brands fa-instagram"></i>
+      </div>
+    </footer>
+
+    <script>
+      $("#icono").click(function () {
+        $("#caja").slideToggle();
+      });
+    </script>
+    <script>
+      var modal = document.getElementById("modal_id");
+      var btn_modal = document.getElementById("btn_id");
+      var cerrar = document.getElementById("cerrarbtn");
+
+      function tiempo() {
+        modal.style.display = "block";
+      }
+      setTimeout(tiempo, 3000);
+
+      btn_modal.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      cerrar.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".arriba").click(function () {
+          $("body, html").animate(
+            {
+              scrollTop: "0px",
+            },
+            1000
+          );
+        });
+      });
+    </script>
+
+    <script>
+      $("#icono1").click(function () {
+        $("#foto").slideToggle();
+      });
+    </script>
+
+    <script>
+      $("#icono2").click(function () {
+        $("#foto2").slideToggle();
+      });
+    </script>
+
+    <script>
+      $("#icono3").click(function () {
+        $("#foto3").slideToggle();
+      });
+    </script>
+
+    <script>
+      $("#icono4").click(function () {
+        $("#foto4").slideToggle();
+      });
+    </script>
+  </body>
+</html>
